@@ -1,0 +1,347 @@
+/* Propuestas Page Styles */
+.propuestas-container {
+    padding: 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.propuesta-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.propuesta-section:nth-child(even) {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.propuesta-section:nth-child(odd) {
+    background: linear-gradient(135deg, #091854 0%, #091854 100%);
+}
+
+.propuesta-section:nth-child(odd) h2 {
+    color: #ffffff;
+}
+
+.propuesta-section:nth-child(odd) h2::after {
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+.propuesta-section:nth-child(odd) p {
+    color: #ffffff;
+}
+
+.propuesta-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.propuesta-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(25, 118, 210, 0.3);
+    transition: all 0.3s ease;
+}
+
+.propuesta-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(25, 118, 210, 0.4);
+}
+
+.propuesta-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.propuesta-icon:hover img {
+    transform: scale(1.2);
+}
+
+.propuesta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.propuesta-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1976d2, #42a5f5);
+    border-radius: 2px;
+}
+
+.propuesta-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Secciones específicas con colores únicos */
+.corruption-zero .propuesta-icon {
+    background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);
+    box-shadow: 0 10px 30px rgba(211, 47, 47, 0.3);
+}
+
+.corruption-zero h2 {
+    color: #d32f2f;
+}
+
+.corruption-zero h2::after {
+    background: linear-gradient(90deg, #d32f2f, #f44336);
+}
+
+.security .propuesta-icon {
+    background: linear-gradient(135deg, #388e3c 0%, #4caf50 100%);
+    box-shadow: 0 10px 30px rgba(56, 142, 60, 0.3);
+}
+
+.security h2 {
+    color: #388e3c;
+}
+
+.security h2::after {
+    background: linear-gradient(90deg, #388e3c, #4caf50);
+}
+
+.services .propuesta-icon {
+    background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);
+    box-shadow: 0 10px 30px rgba(245, 124, 0, 0.3);
+}
+
+.services h2 {
+    color: #f57c00;
+}
+
+.services h2::after {
+    background: linear-gradient(90deg, #f57c00, #ff9800);
+}
+
+.infrastructure .propuesta-icon {
+    background: linear-gradient(135deg, #7b1fa2 0%, #9c27b0 100%);
+    box-shadow: 0 10px 30px rgba(123, 31, 162, 0.3);
+}
+
+.infrastructure h2 {
+    color: #7b1fa2;
+}
+
+.infrastructure h2::after {
+    background: linear-gradient(90deg, #7b1fa2, #9c27b0);
+}
+
+.youth .propuesta-icon {
+    background: linear-gradient(135deg, #00796b 0%, #009688 100%);
+    box-shadow: 0 10px 30px rgba(0, 121, 107, 0.3);
+}
+
+.youth h2 {
+    color: #00796b;
+}
+
+.youth h2::after {
+    background: linear-gradient(90deg, #00796b, #009688);
+}
+
+.business .propuesta-icon {
+    background: linear-gradient(135deg, #e64a19 0%, #ff5722 100%);
+    box-shadow: 0 10px 30px rgba(230, 74, 25, 0.3);
+}
+
+.business h2 {
+    color: #e64a19;
+}
+
+.business h2::after {
+    background: linear-gradient(90deg, #e64a19, #ff5722);
+}
+
+.agriculture .propuesta-icon {
+    background: linear-gradient(135deg, #689f38 0%, #8bc34a 100%);
+    box-shadow: 0 10px 30px rgba(104, 159, 56, 0.3);
+}
+
+.agriculture h2 {
+    color: #689f38;
+}
+
+.agriculture h2::after {
+    background: linear-gradient(90deg, #689f38, #8bc34a);
+}
+
+.health-shelter .propuesta-icon {
+    background: linear-gradient(135deg, #c2185b 0%, #e91e63 100%);
+    box-shadow: 0 10px 30px rgba(194, 24, 91, 0.3);
+}
+
+.health-shelter h2 {
+    color: #c2185b;
+}
+
+.health-shelter h2::after {
+    background: linear-gradient(90deg, #c2185b, #e91e63);
+}
+
+.about-candidate .propuesta-icon {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.about-candidate .propuesta-icon img {
+    filter: brightness(0) invert(0) sepia(1) saturate(5) hue-rotate(220deg);
+}
+
+.about-candidate h2 {
+    color: #455a64;
+}
+
+.about-candidate h2::after {
+    background: linear-gradient(90deg, #455a64, #607d8b);
+}
+
+.candidate-info {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.candidate-info p {
+    margin-bottom: 25px;
+}
+
+.candidate-info strong {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+/* Efectos de fondo */
+.propuesta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="20" cy="80" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .propuesta-section {
+        padding: 60px 0;
+    }
+    
+    .propuesta-content {
+        padding: 0 15px;
+    }
+    
+    .propuesta-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .propuesta-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .propuesta-icon i {
+        font-size: 32px;
+    }
+    
+    .propuesta-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .propuesta-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .candidate-info {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    .propuesta-section {
+        padding: 40px 0;
+    }
+    
+    .propuesta-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .propuesta-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .propuesta-icon i {
+        font-size: 24px;
+    }
+    
+    .propuesta-section h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .propuesta-section h2::after {
+        width: 60px;
+        height: 3px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.propuesta-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Hover effects */
+.propuesta-section:hover .propuesta-content {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.propuesta-section:hover h2 {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
